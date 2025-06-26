@@ -1,0 +1,104 @@
+.word-row {
+  display: flex;
+  justify-content: center;      
+  align-items: center;
+  gap: 0.5rem;                  
+}
+
+.audio-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;            
+  cursor: pointer;
+  line-height: 1;               
+  transition: transform 0.15s;
+}
+
+.audio-btn:hover {
+  transform: scale(1.15);
+}
+
+.card{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    max-height: calc(100vh - 220px); /* 100 vh minus header/footer + margins */
+    overflow-y: auto;
+}
+
+.title{
+    font-size: 1.2rem;
+    color: rgb(39, 38, 38);
+    margin-bottom: 10px;
+}
+
+.word{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3370eb;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.meaning{
+    color: #333;
+    margin: 10px 0;
+}
+
+.example{
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.new-word-btn{
+    margin-top: 20px;
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(33, 32, 32);
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
+}
+
+.fav-btn{
+    margin-top: 20px;
+    margin-left: 45px;
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(33, 32, 32);
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
+}
+
+.new-word-btn:hover,
+.fav-btn:hover {
+  background: #eaeaea;
+}
+
+.fav-btn.active {
+  color: red;
+  font-weight: bold;
+}
+
+.saved-toggle-btn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  cursor: pointer;
+}
+
